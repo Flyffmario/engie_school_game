@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.13)  # CMake version check
+project(engie_school_game)               # Create project "simple_example"
+set(CMAKE_CXX_STANDARD 14)            # Enable c++14 standard
+
+# Add main.cpp file of project root directory as source file
+set(SOURCE_FILES main.cpp Door.cpp Door.h Enemy.cpp Enemy.h Engine.cpp Engine.h Entity.cpp Entity.h Enums.h Inventory.cpp Inventory.h Item.cpp Item.h Map.cpp Map.h Player.cpp Player.h Room.cpp Room.h Wall.cpp Wall.h Weapon.cpp Weapon.h)
+
+# Add executable target with source files listed in SOURCE_FILES variable
+add_executable(simple_example ${SOURCE_FILES})
